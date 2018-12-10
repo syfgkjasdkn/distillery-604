@@ -1,6 +1,6 @@
 The `rel/etc/config.exs` [requires](https://github.com/syfgkjasdkn/distillery-604/blob/master/rel/etc/config.exs#L4) some env vars to be set. This introduces some problems with `bin/app remote_console` since the config provider evalutes the config, notices that the env vars are not set, and fails.
 
-The current workaround that I have is to create a [script](https://github.com/syfgkjasdkn/distillery-604/blob/master/bin/remsh) which sets the required env vars to something:
+The current workaround that I have is to create a [script](https://github.com/syfgkjasdkn/distillery-604/blob/master/bin/remsh) which sets the required env vars to something and then opens a remote console:
 
 ```bash
 #! /usr/bin/env bash
