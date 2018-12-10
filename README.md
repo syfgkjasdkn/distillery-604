@@ -9,7 +9,7 @@ export DB_PATH=""
 
 # https://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself
 BINPATH="$( cd "$(dirname "$0")" ; pwd -P )"
-$BINPATH/remumb remote_console
+$BINPATH/app remote_console
 ```
 
 and [copy](https://github.com/syfgkjasdkn/distillery-604/blob/master/rel/config.exs#L27) it into the release.
